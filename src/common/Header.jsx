@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
     ArrowPathIcon,
@@ -38,11 +38,31 @@ export default function Example() {
     // State for mobile menu
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+    /* const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // Cambiar el estado de "scrolled" cuando el scroll está a 60px del top
+            setScrolled(window.scrollY > 60);
+        };
+
+        // Agrega el event listener al montar el componente
+        window.addEventListener('scroll', handleScroll);
+
+        // Elimina el event listener al desmontar el componente
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []); // El segundo argumento del useEffect es un array de dependencias, en este caso, está vacío, lo que significa que solo se ejecutará una vez (equivalente a componentDidMount y componentWillUnmount)
+
+    // Agrega la clase 'scrolled' al navbar cuando el estado es true
+    const navbarClass = scrolled ? 'bg-transparent' : 'bg-transparent'; */
+
     return (
         // Header section
-        <header className="bg-white fixed w-full z-30">
+        <header className={`bg-transparent backdrop-blur-xl fixed w-full`} >
             {/* Navigation bar */}
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
                 {/* Logo */}
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
@@ -66,9 +86,6 @@ export default function Example() {
 
                 {/* Desktop navigation */}
                 <Popover.Group className="hidden lg:flex lg:gap-x-12 z-50">
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                        Inicio
-                    </a>
 
                     {/* Product dropdown */}
                     <Popover className="relative">
@@ -133,6 +150,12 @@ export default function Example() {
                     {/* Other navigation links */}
                     <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                         Nosotros
+                    </a>
+                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                        Precios
+                    </a>
+                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                        Proyectos
                     </a>
                 </Popover.Group>
 

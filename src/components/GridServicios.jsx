@@ -7,7 +7,7 @@ import { FaRegLightbulb } from "react-icons/fa6";
 export default function GridServicios() {
     return (
         < div className="grid grid-cols-2 gap-8 w-full pt-4" >
-            <div className="flex flex-row items-center text-left bg-blue-200 shadow-md rounded-md p-4 hover:bg-blue-300 cursor-pointer">
+            <div className="flex flex-row items-center text-left border-2 border-blue-200 shadow-md rounded-md p-4 hover:bg-blue-300 cursor-pointer">
                 <div className="text-blue-600">
                     <FaLaptopCode className="text-6xl m-4" />
                 </div>
@@ -17,7 +17,7 @@ export default function GridServicios() {
                 </div>
             </div>
 
-            <div className="flex flex-row items-center text-left bg-green-200 shadow-md rounded-md p-4 hover:bg-green-300 cursor-pointer">
+            <div className="flex flex-row items-center text-left border-2 border-green-200 shadow-md rounded-md p-4 hover:bg-green-300 cursor-pointer">
                 <div className="text-green-600">
                     <FaChartLine className="text-6xl m-4" />
                 </div>
@@ -27,7 +27,7 @@ export default function GridServicios() {
                 </div>
             </div>
 
-            <div className="flex flex-row items-center text-left bg-purple-200 shadow-md rounded-md p-4 hover:bg-purple-300 cursor-pointer">
+            <div className="flex flex-row items-center text-left border-2 border-purple-200 shadow-md rounded-md p-4 hover:bg-purple-300 cursor-pointer">
                 <div className="text-purple-600">
                     <MdOutlineWeb className="text-6xl m-4" />
                 </div>
@@ -37,7 +37,7 @@ export default function GridServicios() {
                 </div>
             </div>
 
-            <div className="flex flex-row items-center text-left bg-yellow-200 shadow-md rounded-md p-4 hover:bg-yellow-300 cursor-pointer">
+            <div className="flex flex-row items-center text-left border-2 border-yellow-200 shadow-md rounded-md p-4 hover:bg-yellow-300 cursor-pointer">
                 <div className="text-yellow-600">
                     <FaRegLightbulb className="text-6xl m-4" />
                 </div>
