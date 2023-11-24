@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutUsHome() {
     return (
         <section className="flex flex-col items-center justify-center container w-3/4 mx-auto mt-0 mb-8 marginUp z-10">
-            <div className='flex flex-row items-center mb-12'>
+            <div className='flex flex-col lg:flex-row items-center mb-12'>
                 <h2 className="text-4xl font-bold text-gradient bg-gradient-to-t from-zinc-600 via-zinc-800 to-zinc-900">¿Qué es Ascent? &nbsp;</h2>
                 <p className='text-2xl font-normal text-zinc-700'>La casa de software que impulsa tu éxito digital.</p>
             </div>

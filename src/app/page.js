@@ -7,12 +7,12 @@ import React from 'react'
 export default function Home() {
   return (
     <main className="flex flex-col items-center mb-40">
-      <div className='flex items-center w-4/5 justify-between h-screen z-10'>
+      <div className='flex flex-col items-center mt-20 lg:mt-auto w-5/6 lg:w-4/5 justify-between lg:h-screen z-10 lg:flex-row'>
         <Hero />
-        <section className="flex flex-col w-1/2 items-center justify-center">
+        <section className="flex flex-col w-full lg:w-1/2 items-center justify-center">
           <div className='flex flex-col items-end mb-5'>
-            <h1 className='text-3xl font-bold text-zinc-900'>Expertos en desarrollo digital&nbsp;</h1>
-            <p className='text-2xl font-normal text-zinc-800'>Descubre las ventajas del mundo digital para tu negocio.</p>
+            <h1 className='text-2xl font-bold text-zinc-900'>Expertos en desarrollo digital&nbsp;</h1>
+            <p className='text-1xl font-normal text-zinc-800'>Descubre las ventajas del mundo digital para tu negocio.</p>
           </div>
           <GridServicios />
         </section>

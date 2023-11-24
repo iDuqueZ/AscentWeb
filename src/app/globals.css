@@ -58,3 +58,9 @@
   /* Color de texto de respaldo en caso de que no se admita background-clip */
   color: transparent;
 }
+
+@media (max-width: 768px) {
+  .marginUp {
+    margin-top: 20px;
+  }
+}
