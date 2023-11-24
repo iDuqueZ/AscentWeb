@@ -33,3 +33,28 @@
 .down {
   bottom: -20rem;
 }
+
+.marginUp {
+  margin-top: -8vh;
+}
+
+.banner {
+  position: relative;
+}
+
+.fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #FFF 1.23%, rgba(255, 255, 255, 0.00) 51%, #FFF 99.98%);
+  top: 0;
+}
+
+.text-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  /* Color de texto de respaldo en caso de que no se admita background-clip */
+  color: transparent;
+}
